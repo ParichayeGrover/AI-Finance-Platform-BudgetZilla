@@ -33,8 +33,7 @@ const HeroSection = () => {
           AI-Powered Clarity  <br /> For Your Chaotic Cash
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          "Because guessing your savings doesn’t count as planning."
-
+          &quot;Because guessing your savings doesn&apos;t count as planning.&quot;
         </p>
         <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
@@ -51,7 +50,7 @@ const HeroSection = () => {
         <div className="hero-image-wrapper mt-5 md:mt-0">
           <div ref={imageRef} className="hero-image">
             <Image
-              src="/Banner.png"
+              src="/banner.jpeg"
               width={1280}
               height={720}
               alt="Dashboard Preview"

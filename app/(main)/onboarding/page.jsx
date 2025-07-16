@@ -25,7 +25,7 @@ export default async function OnboardingPage() {
             Welcome to Welth! 🎉
           </h1>
           <p className="text-xl text-gray-600 mb-2">
-            Let's get your financial journey started
+            Let&apos;s get your financial journey started
           </p>
           <p className="text-gray-500">
             Create your first account to begin tracking your finances
