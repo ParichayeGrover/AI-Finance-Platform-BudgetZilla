@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "app/api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "images": {
+    "domains": [],
+    "formats": ["image/webp", "image/avif"]
+  }
+}

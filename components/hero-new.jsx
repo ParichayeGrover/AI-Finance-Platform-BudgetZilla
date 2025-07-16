@@ -1,17 +1,15 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const HeroSection = () => {
   const imageRef = useRef(null);
-  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     const imageElement = imageRef.current;
-    if (!imageElement) return;
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -51,26 +49,14 @@ const HeroSection = () => {
         </div>
         <div className="hero-image-wrapper mt-5 md:mt-0">
           <div ref={imageRef} className="hero-image">
-            {!imageError ? (
-              <Image
-                src="/banner1.jpeg"
-                width={1280}
-                height={720}
-                alt="Dashboard Preview"
-                className="rounded-lg h-25 shadow-2xl border mx-auto"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1280px"
-                onError={() => setImageError(true)}
-                unoptimized={false}
-              />
-            ) : (
-              <div className="w-full h-[400px] bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg shadow-2xl border mx-auto flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl mb-4">📊</div>
-                  <p className="text-gray-600">AI Finance Dashboard Preview</p>
-                </div>
-              </div>
-            )}
+            <Image
+              src="/banner.jpeg"
+              width={1280}
+              height={720}
+              alt="Dashboard Preview"
+              className="rounded-lg h-25 shadow-2xl border mx-auto"
+              priority
+            />
           </div>
         </div>
       </div>
