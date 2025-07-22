@@ -3,7 +3,7 @@
 A comprehensive AI-powered personal finance management platform built with Next.js 14, featuring intelligent receipt scanning, automated budgeting, and financial insights.
 
 
-Hosted on : https://ai-finance-platform-budget-zilla-st.vercel.app/
+Hosted on : https://ai-finance-platform-budget-zilla.vercel.app/
 
 ## Table of Contents
 
